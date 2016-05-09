@@ -1,0 +1,17 @@
+<h3>Pessoas</h3>
+<table class="table">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Nome</th>
+			<th>E-mail</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="#pessoa of pessoas">
+			<td>{{pessoa.id}}</td>
+			<td>{{pessoa.name}}</td>
+			<td>{{pessoa.email}}</td>
+		</tr>
+	</tbody>
+</table>

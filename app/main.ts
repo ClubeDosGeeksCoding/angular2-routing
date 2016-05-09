@@ -1,4 +1,7 @@
 import { bootstrap }    from 'angular2/platform/browser';
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 import { AppComponent } from './app.component';
-bootstrap(AppComponent);
+import 'rxjs/Rx';
+import { HTTP_PROVIDERS } from 'angular2/http';
+
+
+bootstrap(AppComponent, [HTTP_PROVIDERS]);

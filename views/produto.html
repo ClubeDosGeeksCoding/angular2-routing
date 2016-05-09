@@ -1,0 +1,17 @@
+<h3>Produtos</h3>
+<table class="table">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Nome</th>
+			<th>Preço</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="#produto of produtos">
+			<td>{{produto.id}}</td>
+			<td>{{produto.name}}</td>
+			<td>{{produto.price}}</td>
+		</tr>
+	</tbody>
+</table>
